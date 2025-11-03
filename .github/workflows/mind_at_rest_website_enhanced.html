@@ -1,0 +1,460 @@
+<!-- /index.html (enhanced) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Mind at Rest – Why Sleep Shapes Who We Are</title>
+  <meta name="description" content="Exploring how sleep influences memory, emotion, decision-making, and mental health—with practical, evidence-based tips." />
+  <meta name="theme-color" content="#0a1628" />
+  <!-- Adaptive theme colors for OS preference -->
+  <meta name="theme-color" content="#0a1628" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://example.com/the-mind-at-rest" />
+
+  <!-- Fonts (preconnect + preload + stylesheet) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+
+  <!-- Social -->
+  <meta property="og:title" content="The Mind at Rest – Why Sleep Shapes Who We Are" />
+  <meta property="og:description" content="How sleep sculpts memory, emotion, decisions, and mental health—with practical, evidence-based tips." />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://example.com/cover-sleep.jpg" />
+  <meta property="og:url" content="https://example.com/the-mind-at-rest" />
+  <meta property="og:site_name" content="The Mind at Rest" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="The Mind at Rest – Why Sleep Shapes Who We Are" />
+  <meta name="twitter:description" content="How sleep sculpts memory, emotion, decisions, and mental health—with practical, evidence-based tips." />
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Article",
+    "headline":"The Mind at Rest – Why Sleep Shapes Who We Are",
+    "author":{"@type":"Person","name":"Younas Durrani"},
+    "publisher":{"@type":"Organization","name":"George Mason University"},
+    "datePublished":"2025-10-01",
+    "description":"How sleep affects memory, emotion, decisions, and mental health with practical tips.",
+    "image":"https://example.com/cover-sleep.jpg"
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#0a1628; --bg-soft:#0f1f3a; --fg:#eef3f8; --muted:#9fb3c8;
+      --accent:#64b5f6; --primary:#4a90e2; --card:rgba(255,255,255,.06);
+      --border:rgba(100,181,246,.25); --radius:20px; --ring:#8cc6ff;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--fg);line-height:1.65}
+    a{color:var(--accent)}
+    a:focus, button:focus{outline:3px solid var(--ring);outline-offset:2px}
+    .visually-hidden{position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);white-space:nowrap}
+    .skip{position:fixed;left:12px;top:12px;z-index:70;background:#001633;color:#fff;padding:.6rem .9rem;border-radius:10px;transform:translateY(-140%);transition:.2s}
+    .skip:focus{transform:translateY(0)}
+    header.hero{position:relative;min-height:100vh;display:grid;place-items:center;overflow:hidden}
+    .stars{position:fixed;inset:0;pointer-events:none;overflow:hidden}
+    .star{position:absolute;background:rgba(255,255,255,.35);border-radius:999px;filter:drop-shadow(0 0 6px rgba(255,255,255,.35));animation:twinkle 3.5s ease-in-out infinite}
+    @keyframes twinkle{0%,100%{opacity:.25;transform:scale(1)}50%{opacity:1;transform:scale(1.15)}}
+    .hero .overlay{position:absolute;inset:0;background:
+      radial-gradient(1200px 600px at 50% 10%, rgba(100,181,246,.15), transparent),
+      linear-gradient(#0f1f3a 0%, transparent 35%, transparent 65%, #0a1628 100%)}
+    .container{width:min(1120px,92%);margin-inline:auto}
+    .center{text-align:center}
+    .title{font-size:clamp(2rem,5vw,3.75rem);line-height:1.1;margin:0 0 .5rem;
+      background:linear-gradient(90deg,var(--accent),var(--primary));-webkit-background-clip:text;background-clip:text;color:transparent}
+    .subtitle{color:var(--muted);font-size:clamp(1rem,2.4vw,1.25rem);max-width:70ch;margin-inline:auto}
+    .cta{margin-top:1.25rem;display:inline-flex;gap:.6rem;align-items:center;padding:.9rem 1.2rem;border-radius:999px;background:var(--primary);color:#001025;border:1px solid var(--border);box-shadow:0 0 25px rgba(74,144,226,.35);text-decoration:none;font-weight:700}
+    nav.top{position:sticky;top:0;z-index:50;background:rgba(10,22,40,.65);backdrop-filter:blur(10px);border-bottom:1px solid rgba(100,181,246,.12)}
+    nav .navwrap{display:flex;gap:.25rem .75rem;flex-wrap:wrap;align-items:center;justify-content:center;padding:.6rem}
+    nav a{color:var(--fg);text-decoration:none;padding:.5rem .8rem;border-radius:999px;border:1px solid transparent}
+    nav a:hover, nav a[aria-current="true"]{border-color:var(--border);background:rgba(255,255,255,.08)}
+    main:focus{outline:none}
+    section{padding:72px 0;scroll-margin-top:74px}
+    h2{font-size:clamp(1.6rem,3.2vw,2.25rem);margin:.1rem 0 1rem}
+    p.lead{color:var(--muted);font-size:1.05rem;max-width:70ch;margin-inline:auto}
+    .grid{display:grid;gap:18px}
+    .cards{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+    .card{background:var(--card);border:1px solid var(--border);padding:20px;border-radius:var(--radius)}
+    .chip{display:inline-block;padding:.35rem .6rem;border-radius:999px;background:rgba(100,181,246,.15);border:1px solid var(--border);color:var(--accent);font-size:.85rem;font-weight:600}
+    .muted{color:var(--muted)}
+    .kbd{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;background:#061020;border:1px solid rgba(255,255,255,.1);padding:.1rem .35rem;border-radius:6px}
+    .sim-wrap{display:grid;gap:14px}
+    .sim-row{display:grid;gap:14px}
+    .sim-ctrls{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+    .btn{display:inline-flex;align-items:center;gap:.5rem;padding:.7rem 1rem;border-radius:999px;border:1px solid var(--border);background:rgba(255,255,255,.04);color:var(--fg);cursor:pointer}
+    .btn.primary{background:var(--primary);color:#001025;border-color:transparent}
+    .btn[aria-pressed="true"]{box-shadow:0 0 0 2px rgba(100,181,246,.35)}
+    .stage{transition:.45s ease;transform:scale(.98);opacity:.6}
+    .stage.active{transform:scale(1);opacity:1;box-shadow:0 0 0 2px rgba(100,181,246,.25),0 0 25px rgba(74,144,226,.3)}
+    .music{position:fixed;right:14px;top:14px;z-index:60}
+    .refs li{margin:.4rem 0}
+    footer{border-top:1px solid rgba(100,181,246,.12);background:#0f1f3a;padding:36px 0;color:var(--muted);text-align:center}
+    @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+    @media (hover:hover){nav a:hover{filter:brightness(1.05)}}
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip">Skip to content</a>
+
+  <!-- No-JS helper -->
+  <noscript>
+    <div style="background:#061020;color:#fff;padding:12px;text-align:center">
+      This site uses small animations and an interactive simulator. Everything is still readable without JavaScript.
+    </div>
+  </noscript>
+
+  <div class="stars" id="stars" aria-hidden="true"></div>
+
+  <div class="music">
+    <button class="btn" id="musicBtn" aria-label="Toggle ambient music" aria-pressed="false">
+      🎧 <span id="musicLabel">Play ambient</span>
+    </button>
+    <!-- why: avoid eager bandwidth on first paint -->
+    <audio id="ambient" preload="metadata" loop src="ambient-sleep.mp3"></audio>
+  </div>
+
+  <header class="hero" role="banner">
+    <div class="overlay" aria-hidden="true"></div>
+    <div class="container center">
+      <h1 class="title">The Mind at Rest: Why Sleep Shapes Who We Are</h1>
+      <p class="subtitle">A calm, science-based guide to how sleep sculpts memory, emotion, decision-making, and mental health.</p>
+      <a class="cta" href="#why">Begin Your Journey ✨</a>
+    </div>
+  </header>
+
+  <nav class="top" aria-label="Section">
+    <div class="navwrap container" id="toc">
+      <a href="#why">Why Sleep Matters</a>
+      <a href="#stages">Stages of Sleep</a>
+      <a href="#dreams">Psychology of Dreams</a>
+      <a href="#mental">Sleep & Mental Health</a>
+      <a href="#tips">Practical Tips</a>
+      <a href="#refs">References</a>
+    </div>
+  </nav>
+
+  <main id="main" tabindex="-1">
+    <section id="why" aria-labelledby="why-h">
+      <div class="container center">
+        <h2 id="why-h">🧠 Why Sleep Matters — Biological Psychology</h2>
+        <p class="lead">Sleep isn’t “time off.” It’s an active state where the brain rebalances emotions, consolidates memories, and restores cognitive control. Three key regions work in concert:</p>
+        <div class="grid cards" style="margin-top:18px">
+          <article class="card">
+            <span class="chip">Hippocampus</span>
+            <p class="muted">Helps consolidate new experiences into long-term memory, particularly across NREM and REM cycles.</p>
+            <ul>
+              <li>Replays daytime patterns; integrates with existing knowledge in cortex.</li>
+              <li>Poor sleep → weaker learning and retention.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <span class="chip">Amygdala</span>
+            <p class="muted">Sleep calibrates emotional reactivity. Loss of sleep increases amygdala response to stressors.</p>
+            <ul>
+              <li>REM helps process emotional memories safely.</li>
+              <li>Sleep loss → irritability, heightened negative bias.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <span class="chip">Prefrontal Cortex</span>
+            <p class="muted">The brain’s executive center. Sleep restores attention, decision-making, and impulse control.</p>
+            <ul>
+              <li>Supports planning and error monitoring.</li>
+              <li>Sleep loss → poorer judgment and increased risk-taking.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="stages" aria-labelledby="stages-h">
+      <div class="container center">
+        <h2 id="stages-h">🌙 The Stages of Sleep</h2>
+        <p class="lead">A typical night cycles every ~90 minutes through NREM (N1 → N2 → N3) and REM. Early night favors deep N3; later cycles extend REM.</p>
+
+        <div class="grid cards" style="margin-top:18px">
+          <article class="card">
+            <span class="chip">N1 · Light Sleep</span>
+            <p class="muted">Transition from wakefulness; muscles relax; drifting thoughts. ~5–10 mins.</p>
+          </article>
+          <article class="card">
+            <span class="chip">N2 · Stable Sleep</span>
+            <p class="muted">Body temperature and heart rate drop. Sleep spindles/K-complexes support memory and protection from arousal.</p>
+          </article>
+          <article class="card">
+            <span class="chip">N3 · Deep (Slow-Wave) Sleep</span>
+            <p class="muted">Physical restoration, immune support, growth hormone release. Hardest to wake; critical for recovery.</p>
+          </article>
+          <article class="card">
+            <span class="chip">REM · Dream Sleep</span>
+            <p class="muted">Vivid dreaming; emotional processing; integration of memories. Muscle atonia protects from acting out dreams.</p>
+          </article>
+        </div>
+
+        <div class="card" style="margin-top:24px">
+          <div class="sim-wrap">
+            <div class="sim-ctrls center" aria-describedby="simHint">
+              <button id="startSim" class="btn primary">▶ Start 90-Minute Cycle</button>
+              <button id="resetSim" class="btn">↺ Reset</button>
+              <span id="simHint" class="muted">Tip: Each stage will highlight in ~2.5s steps (demo speed). Press <kbd>s</kbd> to start, <kbd>r</kbd> to reset.</span>
+            </div>
+            <div class="sim-row grid cards" role="group" aria-label="Sleep cycle stages">
+              <div class="card stage" id="stage-1">
+                <strong>Stage 1 · N1</strong>
+                <p class="muted">Light sleep begins. Hypnic jerks and drifting awareness are common.</p>
+              </div>
+              <div class="card stage" id="stage-2">
+                <strong>Stage 2 · N2</strong>
+                <p class="muted">Sleep spindles & K-complexes help memory consolidation and reduce arousal.</p>
+              </div>
+              <div class="card stage" id="stage-3">
+                <strong>Stage 3 · N3 (Deep)</strong>
+                <p class="muted">Slow-wave sleep: tissue repair, immune support, energy restoration.</p>
+              </div>
+              <div class="card stage" id="stage-4">
+                <strong>REM · Dream State</strong>
+                <p class="muted">Heightened brain activity; vivid dreams; emotional and memory processing.</p>
+              </div>
+            </div>
+            <div id="simStatus" class="center muted" role="status" aria-live="polite">Ready.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="dreams" aria-labelledby="dreams-h">
+      <div class="container center">
+        <h2 id="dreams-h">💬 The Psychology of Dreams</h2>
+        <div class="grid cards" style="margin-top:18px">
+          <article class="card">
+            <span class="chip">Classical · Freud</span>
+            <p class="muted">Dreams as wish-fulfillment with manifest (story) and latent (hidden) content. Historically influential; modern evidence is mixed.</p>
+          </article>
+          <article class="card">
+            <span class="chip">Activation-Synthesis</span>
+            <p class="muted">REM brainstem activity is synthesized by cortex into a narrative; explains emotional intensity and odd logic.</p>
+          </article>
+          <article class="card">
+            <span class="chip">Emotional Processing</span>
+            <p class="muted">Contemporary views emphasize REM/NREM roles in integrating memories and down-regulating emotional charge.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="mental" aria-labelledby="mental-h">
+      <div class="container center">
+        <h2 id="mental-h">⚖️ Sleep & Mental Health</h2>
+        <p class="lead">Insufficient or irregular sleep is linked to increased stress reactivity, anxiety, low mood, and cognitive inefficiency. Restoring sleep often improves emotional stability and attention.</p>
+        <div class="grid cards" style="margin-top:18px">
+          <article class="card">
+            <span class="chip">Stress Reactivity</span>
+            <p class="muted">Sleep restriction heightens amygdala responses and reduces prefrontal control → more irritability and negative bias.</p>
+          </article>
+          <article class="card">
+            <span class="chip">Cognition</span>
+            <p class="muted">Attention, working memory, and decision-making decline with sleep loss; error rates and risk-taking rise.</p>
+          </article>
+          <article class="card">
+            <span class="chip">Mood</span>
+            <p class="muted">Short sleep is associated with higher odds of depressive and anxious symptoms; REM appears protective for affect.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="tips" aria-labelledby="tips-h">
+      <div class="container center">
+        <h2 id="tips-h">🌍 Practical Tips & Interventions</h2>
+        <div class="grid cards" style="margin-top:18px">
+          <article class="card">
+            <span class="chip">CBT-I (First-line Care)</span>
+            <p class="muted">Structured program that targets thoughts/behaviors keeping you awake: stimulus control, sleep restriction, relaxation, and cognitive strategies. Proven effective for chronic insomnia.</p>
+          </article>
+          <article class="card">
+            <span class="chip">Sleep Hygiene</span>
+            <ul class="muted" style="text-align:left">
+              <li>Consistent schedule (even weekends).</li>
+              <li>Dim lights/screens 60–90 min pre-bed; cool, dark, quiet room.</li>
+              <li>Caffeine last ≥6–8 hrs before bed; avoid late heavy meals.</li>
+              <li>Reserve bed for sleep/sex; if awake >20 min, get up and reset.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <span class="chip">Circadian Support</span>
+            <ul class="muted" style="text-align:left">
+              <li>Morning light exposure; regular daytime activity.</li>
+              <li>Wind-down routine; anchor wake time first when resetting.</li>
+              <li>Short naps <span class="kbd">20</span>–<span class="kbd">30</span> min before mid-afternoon if needed.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="refs" aria-labelledby="refs-h">
+      <div class="container">
+        <h2 id="refs-h" class="center">📚 References (high-quality, educational/medical)</h2>
+        <ul class="refs">
+          <li><strong>Harvard Health / Division of Sleep Medicine:</strong> Sleep and Mood – overview of bidirectional links. <a href="https://healthysleep.med.harvard.edu/healthy/matters/benefits-of-sleep/mood" target="_blank" rel="noopener">Link</a></li>
+          <li><strong>Harvard Health:</strong> Sleep stages & memory – roles for NREM and REM in consolidation. <a href="https://www.health.harvard.edu/mind-and-mood/sleep-stages-and-memory" target="_blank" rel="noopener">Link</a></li>
+          <li><strong>NIH News in Health:</strong> Sleep On It (sleep, memory, learning). <a href="https://newsinhealth.nih.gov/2013/06/sleep-it" target="_blank" rel="noopener">Link</a></li>
+          <li><strong>Sleep Foundation:</strong> Mental Health and Sleep (clinical overview). <a href="https://www.sleepfoundation.org/mental-health" target="_blank" rel="noopener">Link</a></li>
+          <li><strong>Sleep Foundation:</strong> How to Fix Your Sleep Schedule. <a href="https://www.sleepfoundation.org/sleep-hygiene/how-to-reset-your-sleep-schedule" target="_blank" rel="noopener">Link</a></li>
+          <li><strong>Sleep Foundation:</strong> CBT-I Overview. <a href="https://www.sleepfoundation.org/insomnia/treatment/cognitive-behavioral-therapy-for-insomnia" target="_blank" rel="noopener">Link</a></li>
+          <li><strong>PMC (2025):</strong> The Dreaming Conundrum – contemporary perspectives on dream function. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11891731/" target="_blank" rel="noopener">Link</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      Created by <strong>Younas Durrani</strong> · PSYC Semester Project · George Mason University
+    </div>
+  </footer>
+
+  <script>
+    // Floating stars (idle) — honors reduced-motion, defers generation off main paint
+    (function makeStars(){
+      const wrap = document.getElementById('stars');
+      if (!wrap) return;
+      const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const generate = () => {
+        const n = reduce ? 0 : 80;
+        const frag = document.createDocumentFragment();
+        for (let i = 0; i < n; i++) {
+          const s = document.createElement('span');
+          s.className = 'star';
+          const size = (Math.random()*2.2 + 1).toFixed(2);
+          s.style.cssText = [
+            `width:${size}px;height:${size}px`,
+            `left:${(Math.random()*100).toFixed(2)}%`,
+            `top:${(Math.random()*100).toFixed(2)}%`,
+            `animation-delay:${(Math.random()*5).toFixed(2)}s`,
+            'will-change:transform,opacity'
+          ].join(';');
+          frag.appendChild(s);
+        }
+        wrap.appendChild(frag);
+      };
+      (window.requestIdleCallback || function (fn){ setTimeout(fn, 120); })(generate);
+    })();
+
+    // Ambient audio toggle with persistence & tab-visibility handling
+    (function music(){
+      const btn = document.getElementById('musicBtn');
+      const label = document.getElementById('musicLabel');
+      const audio = document.getElementById('ambient');
+      if(!btn || !label || !audio) return;
+      let fade, playing=false;
+
+      function setPressed(p){ btn.setAttribute('aria-pressed', String(p)); }
+      function setLabel(){ label.textContent = playing ? 'Pause ambient' : 'Play ambient'; }
+      function fadeTo(target){
+        clearInterval(fade);
+        fade=setInterval(()=>{
+          const step=0.05;
+          const next=(audio.volume + (audio.volume<target?step:-step));
+          audio.volume=Math.max(0,Math.min(0.35,Number(next.toFixed(2))));
+          if((target===0 && audio.volume<=0)||(target>0 && audio.volume>=target)) clearInterval(fade);
+        },80);
+      }
+      async function play(){
+        try{
+          audio.volume=0;
+          await audio.play();
+          fadeTo(0.3);
+          playing=true; setPressed(true); setLabel();
+          localStorage.setItem('ambient','on');
+        }catch{ /* autoplay blocked until user interacts */ }
+      }
+      function pause(){
+        fadeTo(0);
+        setTimeout(()=>audio.pause(),400);
+        playing=false; setPressed(false); setLabel();
+        localStorage.setItem('ambient','off');
+      }
+
+      btn.addEventListener('click', ()=> playing ? pause() : play(), {passive:true});
+      window.addEventListener('keydown', (e)=>{
+        if((e.key==='m' || e.key==='M') && !e.altKey && !e.ctrlKey && !e.metaKey){ e.preventDefault(); playing?pause():play(); }
+      }, {passive:false});
+
+      // Resume intent & pause when tab hidden
+      document.addEventListener('visibilitychange', () => {
+        const wanted = localStorage.getItem('ambient') === 'on';
+        if (document.hidden && !audio.paused) {
+          audio.pause();
+        } else if (!document.hidden && wanted && !playing) {
+          btn.click();
+        }
+      });
+
+      if(localStorage.getItem('ambient')==='on'){ setTimeout(play, 50); } else { setPressed(false); }
+    })();
+
+    // 90‑minute sleep cycle simulator (demo timing ~10s total)
+    (function simulator(){
+      const order=['stage-1','stage-2','stage-3','stage-4'];
+      const status=document.getElementById('simStatus');
+      const start=document.getElementById('startSim');
+      const reset=document.getElementById('resetSim');
+      let idx=-1, timer=null;
+
+      function setActive(i){
+        order.forEach((id,j)=>{
+          const el=document.getElementById(id);
+          if(!el) return;
+          el.classList.toggle('active', j<=i);
+        });
+      }
+      function stop(){
+        clearInterval(timer); timer=null; idx=-1; setActive(-1);
+        if(status) status.textContent='Ready.';
+      }
+      function step(){
+        idx++;
+        if(idx<order.length){ setActive(idx); if(status) status.textContent='Stage '+(idx+1)+' active'; }
+        else{ clearInterval(timer); timer=null; if(status) status.textContent='✨ Cycle complete!'; }
+      }
+      if(start) start.addEventListener('click',()=>{ if(timer) return; if(status) status.textContent='Cycle running…'; idx=-1; setActive(-1); timer=setInterval(step,2500); }, {passive:true});
+      if(reset) reset.addEventListener('click', stop, {passive:true});
+      window.addEventListener('beforeunload', stop);
+      window.addEventListener('keydown',(e)=>{ if(e.key==='r' && !e.metaKey && !e.ctrlKey){ e.preventDefault(); stop(); } if(e.key==='s' && !e.metaKey && !e.ctrlKey){ e.preventDefault(); if(!timer) start.click(); } }, {passive:false});
+    })();
+
+    // Active section highlighting + hash sync on load
+    (function activeTOC(){
+      const links=[...document.querySelectorAll('#toc a')];
+      const map=new Map(links.map(a=>[a.getAttribute('href'), a]));
+      const obs=new IntersectionObserver((entries)=>{
+        entries.forEach(entry=>{
+          if(entry.isIntersecting){
+            const id='#'+entry.target.id;
+            map.forEach(a=>a.removeAttribute('aria-current'));
+            const link=map.get(id); if(link) link.setAttribute('aria-current','true');
+          }
+        });
+      }, {rootMargin:"-40% 0px -55% 0px", threshold:[0,1]});
+      [...document.querySelectorAll('main > section[id]')].forEach(s=>obs.observe(s));
+
+      // On-load hash state
+      if(location.hash){
+        const link = map.get(location.hash);
+        if(link){
+          links.forEach(a=>a.removeAttribute('aria-current'));
+          link.setAttribute('aria-current','true');
+        }
+      }
+    })();
+  </script>
+</body>
+</html>
